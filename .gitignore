@@ -1,0 +1,16 @@
+*.zip
+*.7z
+jlcpcb/
+*.frb
+*.FCStd1
+
+# KiCad dedicated files
+_autosave-*
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_prl
+fp-info-cache
+*-backups*/
+*.lck
+*.round-tracks-config
+ibom.html
