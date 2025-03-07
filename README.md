@@ -1,6 +1,6 @@
 Designed using Kicad 8
 
-Unlike harness box, OBD2-C doesn't use relay. 
+Unlike harness box, OBD2-C doesn't use the relay. 
 
 The purpose of it is to sniff CAN buses that are already present in OBD-2 port, similar to what white panda was doing in the past, but compatible with [OBD-C](https://github.com/commaai/neo/blob/master/car_harness/OBD-C.sch.pdf), though often only diagnostic CAN is populated on OBD-2.
 
@@ -11,8 +11,9 @@ Alternatively, bus 1 can be rerouted using jumpers as a GMLAN (obd pin 1) as in 
 - CAN2 (pins 12, 13)
 - CAN3 (pins 6, 14) - this one can be used e.g. as "[ELM327](https://github.com/commaai/panda/blob/master/examples/query_vin_and_stats.py)" or [vin](https://github.com/commaai/openpilot/blob/master/selfdrive/debug/car/vin.py) reading in openpilot 
 
-![OBD-2 connector pinout](https://www.csselectronics.com/cdn/shop/files/obd2-connector-pinout-socket.svg)
-https://www.csselectronics.com/cdn/shop/files/obd2-connector-pinout-socket.svg
+
+![image](https://github.com/user-attachments/assets/d3b74084-641b-4e11-99f3-1eaab66647f0)
+As seen from PCB side
 
 Some notes regarding openpilot bus names mapping to STM32 peripherals and [harness](https://github.com/commaai/neo/blob/master/car_harness/v1/open_pinout.sch.pdf) - (the indexes are not always consistent):
 `HARNESS_STATUS_NORMAL`

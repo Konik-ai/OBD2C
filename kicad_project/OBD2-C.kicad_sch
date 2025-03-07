@@ -3448,10 +3448,6 @@
 		(uuid "41ed5fe2-7676-481b-be95-e9f0361805d0")
 	)
 	(no_connect
-		(at 91.44 64.77)
-		(uuid "4aaf3015-3d08-44ae-8d51-6d59220a8279")
-	)
-	(no_connect
 		(at 91.44 77.47)
 		(uuid "566c79eb-36fb-436e-b362-b693a0133bb2")
 	)
@@ -4175,22 +4171,44 @@
 	)
 	(global_label "CAN1_L"
 		(shape input)
-		(at 36.83 54.61 180)
+		(at 99.06 64.77 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "57bff2a5-01a5-4cee-8ffd-01ecaf5bf095")
+		(uuid "5746c2e5-da94-4dbf-b2b4-a23298fa811b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 26.9505 54.61 0)
+			(at 108.9395 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CAN1_L"
+		(shape input)
+		(at 99.06 54.61 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "57bff2a5-01a5-4cee-8ffd-01ecaf5bf095")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 108.9395 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -5010,6 +5028,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 95.25 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "3002633d-0073-45a6-aa8d-bdb7b47444f6")
+		(property "Reference" "JP7"
+			(at 95.25 59.436 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1L"
+			(at 95.25 61.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
+			(at 95.25 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 95.25 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ca6955a5-f39a-476c-8585-0244efd5339b")
+		)
+		(pin "1"
+			(uuid "2a87dbf9-e466-4363-9d94-519568350190")
+		)
+		(instances
+			(project "OBD2-C"
+				(path "/f2a0951e-c484-4a3e-ba5c-498011ede3e6"
+					(reference "JP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 245.11 38.1 0)
 		(unit 1)
@@ -5245,7 +5330,8 @@
 	)
 	(symbol
 		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 40.64 54.61 0)
+		(at 95.25 54.61 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -5253,7 +5339,7 @@
 		(dnp no)
 		(uuid "3d229d62-7531-41b3-8bf2-84a493d8a8bd")
 		(property "Reference" "JP2"
-			(at 40.64 49.276 0)
+			(at 95.25 49.276 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5261,7 +5347,7 @@
 			)
 		)
 		(property "Value" "GM_gnd"
-			(at 40.64 51.816 0)
+			(at 95.25 51.816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5269,7 +5355,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
-			(at 40.64 54.61 0)
+			(at 95.25 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5278,7 +5364,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 40.64 54.61 0)
+			(at 95.25 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5287,7 +5373,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 40.64 54.61 0)
+			(at 95.25 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5703,16 +5789,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 44.45 54.61 90)
+		(at 91.44 54.61 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "65b4e331-8b9e-49cd-8dcb-8bd27b6038ac")
 		(property "Reference" "#PWR06"
-			(at 50.8 54.61 0)
+			(at 85.09 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5721,7 +5807,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 48.006 54.61 90)
+			(at 87.884 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5730,7 +5816,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 54.61 0)
+			(at 91.44 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5739,7 +5825,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 54.61 0)
+			(at 91.44 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5748,7 +5834,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 44.45 54.61 0)
+			(at 91.44 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7406,6 +7492,15 @@
 			)
 		)
 		(property "LCSC" "C566013"
+			(at 69.85 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" "180"
 			(at 69.85 113.03 0)
 			(effects
 				(font
